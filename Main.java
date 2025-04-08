@@ -17,7 +17,7 @@ public class Main extends Payment {
         // Case Ciciripi
         Main ciciripi = new Main(10000000, "Voucher Diskon");
         System.out.println("=== Pembayaran Ciciripi ===");
-        System.out.println("Total Harga Sebelum Diskon: Rp " + 10000000);
+        System.out.println("Total Harga Sebelum Diskon: Rp " + (int)ciciripi.totalPrice);
         ciciripi.pay("Voucher Diskon", 15); // 15% discount
         System.out.println("Total Harga Setelah Diskon: Rp " + (int)ciciripi.getTotalPrice());
         ciciripi.displayPaymentDetails();
